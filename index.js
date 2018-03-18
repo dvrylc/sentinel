@@ -87,4 +87,9 @@ function main() {
     });
 }
 
-init();
+if (process.argv[2] === '-h' || process.argv[2] === '--help') {
+  console.log(strings.help);
+  process.exit();
+} else {
+  init();
+}
