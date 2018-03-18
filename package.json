@@ -1,0 +1,22 @@
+{
+  "name": "sentinel",
+  "version": "1.0.0",
+  "description": "Sentinel is a command-line site monitor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvrylc/sentinel.git"
+  },
+  "author": "Daryl Chan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dvrylc/sentinel/issues"
+  },
+  "homepage": "https://github.com/dvrylc/sentinel#readme",
+  "bin": {
+    "sentinel": "./index.js"
+  }
+}
