@@ -18,5 +18,10 @@
   "homepage": "https://github.com/dvrylc/sentinel#readme",
   "bin": {
     "sentinel": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "node-fetch": "^2.1.1",
+    "ora": "^2.0.0"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "timeout": 1000,
+  "sites": [
+    "http://www.google.com",
+    "http://www.youtube.com",
+    "http://www.facebook.com",
+    "http://www.baidu.com",
+    "http://www.wikipedia.org",
+    "http://www.reddit.com",
+    "http://g00gle.com",
+    "http://www.yahoo.com",
+    "http://www.qq.com",
+    "http://www.amazon.com",
+    "http://www.twitter.com"
+  ]
+}
