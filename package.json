@@ -1,7 +1,7 @@
 {
   "name": "sentinel",
   "version": "1.0.0",
-  "description": "Sentinel is a command-line site monitor.",
+  "description": "A command-line site monitor",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
