@@ -16,7 +16,7 @@ $ sentinel
 ## Usage
 
 ```
-sentinel [options]
+$ sentinel [options]
 
 A command-line site monitor
 
@@ -26,7 +26,7 @@ Options:
 
 ## Configuration
 
-Sentinel relies on a config file (`config.json`) for the list of sites to monitor, as well as some user-configurable settings. 
+Sentinel relies on a config file for the list of sites to monitor, as well as some user-configurable settings. 
 
 To locate the config file, run `sentinel --help`. 
 
