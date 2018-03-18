@@ -1,5 +1,5 @@
 {
-  "timeout": 1000,
+  "timeout": 2000,
   "sites": [
     "http://www.google.com",
     "http://www.youtube.com",
