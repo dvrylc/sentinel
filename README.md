@@ -1,7 +1,7 @@
 # Sentinel
 
 > A command-line site monitor
-<img src="demo.gif">
+<img src="https://i.imgur.com/3EKwpKP.gif">
 
 ## Installation
 
@@ -32,7 +32,7 @@ Sentinel relies on a config file for the list of sites to monitor, as well as so
 
 When you first run Sentinel, it will prompt you to setup a config file in your home directory.
 
-Subsequently, to locate the config file, run `sentinel -h`. 
+Subsequently, to locate the config file, run `sentinel -h`.
 
 To start afresh, run `sentinel -s`. Sentinel will prompt you to replace your existing config file with a fresh one.
 
