@@ -38,7 +38,7 @@ To start afresh, run `sentinel -s`. Sentinel will prompt you to replace your exi
 
 ### Configuration fields
 
-`config.json` should always be a valid JSON object.
+The config file should always be a valid JSON object.
 
 - `sites (array)`: Array of absolute (`http` or `https`) URLs to monitor
 
