@@ -5,6 +5,7 @@ const chalk = require('chalk');
 const fetch = require('node-fetch');
 const fs = require('fs');
 const ora = require('ora');
+const os = require('os');
 const strings = require('./strings');
 
 // Chalk
@@ -87,9 +88,11 @@ function main() {
     });
 }
 
-if (process.argv[2] === '-h' || process.argv[2] === '--help') {
-  console.log(strings.help);
-  process.exit();
-} else {
-  init();
-}
+// Commander
+const sentinel = require('commander');
+sentinel
+  .version('1.0.0')
+  .description(`A command-line site monitor\n  Config file: ${os.homedir()}/config.json`)
+  .parse(process.argv);
+
+init();
