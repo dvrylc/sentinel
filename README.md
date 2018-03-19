@@ -30,11 +30,11 @@ Options:
 
 Sentinel relies on a config file for the list of sites to monitor, as well as some user-configurable settings.
 
-When you first run Sentinel, it will prompt you to setup a config file in your home directory. Alternatively, run `sentinel -s`.
+When you first run Sentinel, it will prompt you to setup a config file in your home directory.
 
-To locate the config file, run `sentinel -h`.
+Subsequently, to locate the config file, run `sentinel -h`. 
 
-If you wish to start afresh, run `sentinel -s` and Sentinel will prompt you to replace your existing config file with a fresh one.
+To start afresh, run `sentinel -s`. Sentinel will prompt you to replace your existing config file with a fresh one.
 
 ### Configuration fields
 
