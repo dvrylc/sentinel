@@ -127,7 +127,7 @@ function displayResults(results) {
 // Commander
 const sentinel = require('commander');
 sentinel
-  .version('1.0.0')
+  .version(require(`${__dirname}/package.json`).version)
   .description(`A command-line site monitor\n  Config file: ${os.homedir()}/.sentinel`)
   .option('-s, --setup', 'setup config file in the home directory')
   .parse(process.argv);
