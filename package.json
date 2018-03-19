@@ -1,5 +1,5 @@
 {
-  "name": "sentinel",
+  "name": "@dvrylc/sentinel",
   "version": "1.0.0",
   "description": "A command-line site monitor",
   "main": "index.js",
@@ -23,6 +23,7 @@
     "chalk": "^2.3.2",
     "commander": "^2.15.0",
     "node-fetch": "^2.1.1",
-    "ora": "^2.0.0"
+    "ora": "^2.0.0",
+    "yesno": "0.0.1"
   }
 }
