@@ -1,6 +1,9 @@
-# Sentinel
+# Sentinel 
 
-> A command-line site monitor
+[![npm (scoped)](https://img.shields.io/npm/v/@dvrylc/sentinel.svg)](https://www.npmjs.com/package/@dvrylc/sentinel) ![license](https://img.shields.io/github/license/dvrylc/sentinel.svg)
+
+A command-line site monitor
+
 <img src="https://i.imgur.com/3EKwpKP.gif">
 
 ## Installation
