@@ -2,6 +2,7 @@
 
 // Imports
 const chalk = require('chalk');
+const cliTable = require('cli-table');
 const fetch = require('node-fetch');
 const fs = require('fs');
 const ora = require('ora');
@@ -9,6 +10,7 @@ const os = require('os');
 const yesno = require('yesno');
 
 // Chalk
+const green = chalk.green;
 const error = chalk.bold.red;
 const success = chalk.bold.green;
 
@@ -97,30 +99,48 @@ function main(config) {
 }
 
 function checkSite(site) {
+  const startTime = new Date();
+
   return fetch(site, { method: 'HEAD' })
     .then(r => {
       return {
         url: site,
-        up: true
+        time: new Date() - startTime,
+        up: true,
       }
     })
     .catch(e => {
       return {
         url: site,
+        time: new Date() - startTime,
         up: false
       }
     });
 }
 
 function displayResults(results) {
-  results.forEach(site => {
-    if (site.up) {
-      console.log(chalk.green(`✔ ${site.url}`));
-    } else {
-      console.log(error(`✖ ${site.url}`));
+  const table = new cliTable({
+    chars: {
+      'top': '', 'top-mid': '', 'top-left': '', 'top-right': '',
+      'bottom': '', 'bottom-mid': '', 'bottom-left': '', 'bottom-right': '',
+      'left': '', 'left-mid': '', 'mid': '', 'mid-mid': '',
+      'right': '', 'right-mid': '', 'middle': ' '
+    },
+    style: {
+      'padding-left': 0,
+      'padding-right': 0
     }
   });
 
+  results.forEach(site => {
+    if (site.up) {
+      table.push([green('✔'), green(`${site.time}ms`), green(site.url)]);
+    } else {
+      table.push([error('✖'), error(`${site.time}ms`), error(site.url)]);
+    }
+  });
+
+  console.log(table.toString());
   process.exit();
 }
 

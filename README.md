@@ -4,7 +4,7 @@
 
 A command-line site monitor
 
-<img src="https://i.imgur.com/yfUnj68.gif">
+<img src="https://i.imgur.com/xMIiGwQ.gif">
 
 ## Installation
 
